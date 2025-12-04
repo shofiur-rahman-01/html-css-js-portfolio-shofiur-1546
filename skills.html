@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Md.Shofiur Rahman</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #690552;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        header .logo {
+            font-size: 48px;
+            font-weight: 600;
+            color: #a58091;
+        }
+
+        .skills-grid a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .skill-card {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .skill-card:visited {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+            background-color: #c14908;
+        }
+
+        .skills-section {
+            padding: 50px;
+        }
+
+        .skills-section h1 {
+            font-size: 48px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .skill-card {
+            width: 400px;
+            border: 3px solid #fb748f;
+            padding: 15px;
+            border-radius: 400px;
+            background-color: #ffffff10;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .skill-card:hover {
+            transform: scale(1.05);
+        }
+
+        .skill-image {
+            width: 120px;
+            height: 120px;
+            background-color: #ffffff22;
+            margin: 0 auto 20px auto;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .skill-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .skill-card:hover .skill-image img {
+            transform: scale(1.1);
+        }
+
+        .skill-card h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .skill-card p {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        @media(max-width: 900px) {
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 600px) {
+            .skills-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <div class="logo">Shofiur</div>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="booking.html">My Service</a>
+        </nav>
+    </header>
+
+    <section class="skills-section">
+
+        <h1>My Skills</h1>
+
+        <div class="skills-grid">
+
+            <a class="skill-card" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"
+                rel="noopener noreferrer">
+                <div class="skill-image">
+                    <img src="public/html.png" alt="">
+                </div>
+                <h2>HTML</h2>
+
+            </a>
+
+            <a class="skill-card" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                rel="noopener noreferrer">
+                <div class="skill-image">
+                    <img src="public/javascript.png" alt="">
+                </div>
+                <h2>JavaScript</h2>
+
+            </a>
+
+            <a class="skill-card" href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
+                <div class="skill-image">
+                    <img src="public/nextjs.png" alt="">
+                </div>
+                <h2>Next.js</h2>
+
+            </a>
+
+
+            <a class="skill-card" href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
+                <div class="skill-image">
+                    <img src="public/tailwind.png" alt="">
+                </div>
+                <h2>Tailwind CSS</h2>
+
+            </a>
+
+            <a class="skill-card" href="https://react.dev/" target="_blank" rel="noopener noreferrer">
+                <div class="skill-image">
+                    <img src="public/reactjs.png" alt="">
+                </div>
+                <h2>React.js</h2>
+
+            </a>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

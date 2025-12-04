@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Service - Shofiur</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #520948;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        header .logo {
+            font-size: 48px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        header nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .booking-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+            gap: 40px;
+        }
+
+        .booking-form {
+            width: 55%;
+            background-color: #ffffff10;
+            padding: 30px;
+            border-radius: 12px;
+            border: 3px solid #7496fb;
+        }
+
+        .booking-form h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 36px;
+        }
+
+        .booking-form label {
+            display: block;
+            margin: 15px 0 8px;
+            font-size: 16px;
+        }
+
+        .booking-form input,
+        .booking-form select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: none;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .service-list {
+            margin: 20px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        hr {
+            margin: 15px 0;
+            border-color: #ffffff50;
+        }
+
+        .service-item {
+            background-color: #ffffff15;
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .service-item:hover {
+            background-color: #ffffff25;
+        }
+
+        .service-item.active {
+            border: 2px solid #4a90e2;
+            background-color: #ffffff25;
+        }
+
+        .service-item label {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .service-item input {
+            width: 18px;
+            height: 18px;
+        }
+
+        .summary-box {
+            width: 45%;
+            background-color: #ffffff10;
+            padding: 30px;
+            border-radius: 12px;
+            border: 3px solid #7496fb;
+            height: fit-content;
+        }
+
+        .summary-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .total-box {
+            font-size: 22px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+        }
+
+        .booking-form button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 15px;
+            font-size: 18px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        @media(max-width: 900px) {
+            .booking-container {
+                flex-direction: column;
+            }
+
+            .booking-form,
+            .summary-box {
+                width: 100%;
+            }
+
+            .service-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <div class="logo">Shofiur</div>
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="booking.html">My Service</a>
+
+        </nav>
+    </header>
+
+    <div class="booking-container">
+
+        <div class="booking-form">
+            <h1>My Service</h1>
+
+            <label>Name</label>
+            <input type="text" id="name" title="Enter your full name">
+
+            <label>Email</label>
+            <input type="email" id="email" title="Enter your email">
+
+            <label>Phone</label>
+            <input type="number" id="phone" title="Enter your phone number">
+
+            <label>Choose Services</label>
+
+            <div class="service-list">
+                <div class="service-item">
+                    <label>
+                        <input type="checkbox" class="service" data-name="Web Development" data-price="10000">
+                        Web Development
+                    </label>
+                    <span>৳5,000</span>
+                </div>
+
+                <div class="service-item">
+                    <label>
+                        <input type="checkbox" class="service" data-name="Graphics Design" data-price="4000">
+                        Graphics Design
+                    </label>
+                    <span>৳3,000</span>
+                </div>
+
+                <div class="service-item">
+                    <label>
+                        <input type="checkbox" class="service" data-name="Logo Design" data-price="3000">
+                        Logo Design
+                    </label>
+                    <span>৳1,000</span>
+                </div>
+
+                <div class="service-item">
+                    <label>
+                        <input type="checkbox" class="service" data-name="LinkedIn Optimization" data-price="2500">
+                        LinkedIn Optimization
+                    </label>
+                    <span>৳1,500</span>
+                </div>
+            </div>
+
+            <label>Project Time</label>
+            <select id="projectTime" title="Select expected delivery time">
+                <option value="1.40">1 Week (+30%)</option>
+                <option value="1.20">2 Weeks (+20%)</option>
+                <option value="1.10">3 Weeks (+10%)</option>
+                <option value="1.00">1 Month (Standard)</option>
+            </select>
+
+            <button id="submitBtn">Submit</button>
+        </div>
+
+        <div class="summary-box">
+            <h2>Order Summary</h2>
+
+            <div class="summary-item">
+                <span>Name:</span>
+                <span id="summaryName">—</span>
+            </div>
+
+            <div class="summary-item">
+                <span>Email:</span>
+                <span id="summaryEmail">—</span>
+            </div>
+
+            <div class="summary-item">
+                <span>Phone:</span>
+                <span id="summaryPhone">—</span>
+            </div>
+
+            <hr>
+
+            <div id="summaryList"></div>
+
+            <div class="summary-item">
+                <span>Project Time:</span>
+                <span id="summaryTime">1 Month</span>
+            </div>
+
+            <div class="total-box">
+                <span>Total:</span>
+                <span id="totalPrice">৳0</span>
+            </div>
+        </div>
+
+    </div>
+
+<script>
+    const services = document.querySelectorAll(".service");
+    const serviceItems = document.querySelectorAll(".service-item");
+    const summaryList = document.getElementById("summaryList");
+    const projectTime = document.getElementById("projectTime");
+    const summaryTime = document.getElementById("summaryTime");
+    const totalPriceElement = document.getElementById("totalPrice");
+
+    const nameField = document.getElementById("name");
+    const emailField = document.getElementById("email");
+    const phoneField = document.getElementById("phone");
+
+    const summaryName = document.getElementById("summaryName");
+    const summaryEmail = document.getElementById("summaryEmail");
+    const summaryPhone = document.getElementById("summaryPhone");
+
+    const submitBtn = document.getElementById("submitBtn");
+
+    function updateSummary() {
+        summaryList.innerHTML = "";
+        let baseTotal = 0;
+
+        services.forEach((service, index) => {
+            if (service.checked) {
+                serviceItems[index].classList.add("active");
+                const name = service.dataset.name;
+                const price = parseInt(service.dataset.price);
+
+                baseTotal += price;
+
+                summaryList.innerHTML += `
+                    <div class="summary-item">
+                        <span>${name}</span>
+                        <span>৳${price}</span>
+                    </div>
+                `;
+            } else {
+                serviceItems[index].classList.remove("active");
+            }
+        });
+
+        const multiplier = parseFloat(projectTime.value);
+        const finalTotal = Math.floor(baseTotal * multiplier);
+
+        summaryTime.textContent = projectTime.options[projectTime.selectedIndex].text;
+        totalPriceElement.textContent = `৳${finalTotal}`;
+    }
+
+    // Live summary update
+    nameField.addEventListener("input", () => summaryName.textContent = nameField.value || "—");
+    emailField.addEventListener("input", () => summaryEmail.textContent = emailField.value || "—");
+    phoneField.addEventListener("input", () => summaryPhone.textContent = phoneField.value || "—");
+
+    services.forEach(service => service.addEventListener("change", updateSummary));
+    projectTime.addEventListener("change", updateSummary);
+
+    // Validation + Submit
+    submitBtn.addEventListener("click", () => {
+
+        // 1. Name required
+        if (nameField.value.trim() === "") {
+            alert("Please enter your Name.");
+            return;
+        }
+
+        // 2. Email required
+        if (emailField.value.trim() === "") {
+            alert("Please enter your Email.");
+            return;
+        }
+
+        // 3. Phone required
+        if (phoneField.value.trim() === "") {
+            alert("Please enter your Phone number.");
+            return;
+        }
+
+        // 4. At least one service must be selected
+        let serviceSelected = false;
+        services.forEach(s => {
+            if (s.checked) serviceSelected = true;
+        });
+
+        if (!serviceSelected) {
+            alert("Please select at least one service.");
+            return;
+        }
+
+        // If all valid → Submit success
+        alert("Form submitted successfully!");
+
+        // Reset form
+        nameField.value = "";
+        emailField.value = "";
+        phoneField.value = "";
+        summaryName.textContent = "—";
+        summaryEmail.textContent = "—";
+        summaryPhone.textContent = "—";
+
+        services.forEach(s => s.checked = false);
+        projectTime.value = "1.00";
+
+        updateSummary();
+    });
+
+    updateSummary();
+</script>
+
+
+</body>
+
+</html>

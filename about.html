@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Shofiur Rahman</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #3f063f;
+            color: #a088a0;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        header .logo {
+            font-size: 48px;
+            font-weight: 600;
+            color: #a77ead;
+        }
+
+        header nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .about-section {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            width: fit-content;
+            padding: 50px;
+            gap: 80px;
+        }
+
+        .about-image {
+            width: 440px;
+            height: 550px;
+            background-color: #ffffff22;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .about-info {
+            width: 50%;
+            padding-left: 40px;
+        }
+
+        .about-info h1 {
+            font-size: 48px;
+            margin-bottom: 25px;
+        }
+
+        .info-line {
+            margin-bottom: 18px;
+            font-size: 20px;
+        }
+
+        .info-label {
+            font-weight: bold;
+        }
+
+        .social-icons {
+            margin-top: 40px;
+            display: flex;
+            gap: 40px;
+        }
+
+        .social-icons div img {
+            width: 60px;
+            height: 60px;
+            background-color: #fff;
+            padding: 4px;
+            border-radius: 50%;
+
+        }
+
+        .social-icons div img:hover {
+            cursor: pointer;
+        }
+
+        .social-icons div {
+            width: 35px;
+            height: 35px;
+            background-color: #fff3;
+            border-radius: 50%;
+        }
+
+        @media(max-width: 900px) {
+            .about-section {
+                flex-direction: column;
+            }
+
+            .about-image {
+                width: 100%;
+                height: 550px;
+            }
+
+            .about-info {
+                width: 100%;
+                padding-left: 0;
+                margin-top: 30px;
+            }
+
+            .about-info h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <div class="logo">Shofiur</div>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="booking.html">My Service</a>
+
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <div class="about-image">
+            <img src="public/Shofiur.jpg" alt="">
+        </div>
+
+
+
+        <div class="about-info">
+            <h1>About Me</h1>
+
+            <p class="info-line"><span class="info-label">Name:</span>Md.Shofiur Rahman</p>
+            <p class="info-line"><span class="info-label">ID:</span> 0242220005101546</p>
+            <p class="info-line"><span class="info-label">Batch:</span>63</p>
+            <p class="info-line"><span class="info-label">Batch NO:</span>223</p>
+            <p class="info-line"><span class="info-label">Department:</span>CSE</p>
+            <p class="info-line"><span class="info-label">Years of Experience:</span>1+ Years</p>
+
+            <p class="info-line"><span class="info-label">Code Languages:</span> NEXT JS, C, C++, Python, Java</p>
+
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/md.shofiur.rahman.161" target="_blank" rel="noopener noreferrer">
+                    <div><img src="public/Facebook.jpeg" alt="Facebook"></div>
+                </a>
+                <a href="https://www.instagram.com/md.shofiurrahman?igsh=anBzeXd3bm91NnJl" target="_blank" rel="noopener noreferrer">
+                    <div><img src="public/instagram.png" alt="Instagram"></div>
+                </a>
+                <a href="mailto:testmail@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <div><img src="public/email.png" alt="Email"></div>
+                </a>
+                <a href="https://github.com/shofiur-rahman-01" target="_blank" rel="noopener noreferrer">
+                    <div><img src="public/github.png" alt="Email"></div>
+                </a>
+
+
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

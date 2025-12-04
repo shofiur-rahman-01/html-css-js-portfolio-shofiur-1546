@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md.Shofiur Rahman</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #630948;
+            color: #fff;
+            min-height: 80vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        header .logo {
+            font-size: 48px;
+            font-weight: 600;
+            color: #a88195;
+        }
+
+        header nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            min-height: calc(80vh - 80px);
+
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text h2 {
+            font-size: 64px;
+            line-height: 1.3;
+            margin-bottom: 25px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .hero-text button {
+            background-color: #4a90e2;
+            border: none;
+            padding: 14px 28px;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        .social-icons {
+            margin-top: 25px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons div img {
+            width: 60px;
+            height: 60px;
+            background-color: #fff;
+            padding: 4px;
+            border-radius: 50%;
+
+        }
+
+        .social-icons div img:hover {
+            cursor: pointer;
+        }
+
+        .hero-image {
+            width: fit;
+            height: fit;
+            background-color: rgba(190, 15, 15, 0.419);
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 60px;
+            padding: 0 50px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat h3 {
+            font-size: 64px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .stat p {
+            font-size: 18px;
+            color: #fff;
+        }
+
+        @media(max-width: 900px) {
+            .hero {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .hero-image {
+                margin-top: 30px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            header nav {
+                margin-top: 10px;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="index.html">
+            <div class="logo">Shofiur</div>
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="booking.html">My Service</a>
+
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>I am Shofiur Rahman</h1>
+            <h6>I am a student of Daffodil International University (DIU)</h6>
+            <h2>Your Trusted <br> Web Developer & <br> Brand Builder</h2>
+            <p>Let's Design, Develop, and Dominate Your Brand with Code & Strategy</p>
+            <a href="booking.html"><button>Get a Quote</button></a>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/md.shofiur.rahman.161" target="_blank" rel="noopener noreferrer">
+                    <div><img src="public/Facebook.jpeg" alt="Facebook"></div>
+                </a>
+                <a href="https://www.instagram.com/md.shofiurrahman?igsh=anBzeXd3bm91NnJl" target="_blank" rel="noopener noreferrer">
+                    <div><img src="public/instagram.png" alt="Instagram"></div>
+                </a>
+                <a href="mailto:testmail@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <div><img src="public/email.png" alt="Email"></div>
+                </a>
+                <a href="https://github.com/shofiur-rahman-01" target="_blank" rel="noopener noreferrer">
+                    <div><img src="public/github.png" alt="Email"></div>
+                </a>
+
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="public/Shofiur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat">
+            <h3>2+</h3>
+            <p>Years of Experience</p>
+        </div>
+        <div class="stat">
+            <h3>20+</h3>
+            <p>Projects Completed</p>
+        </div>
+        <div class="stat">
+            <h3>5+</h3>
+            <p>Clients Served</p>
+        </div>
+        <div class="stat">
+            <h3>10+</h3>
+            <p>Awards Won</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
